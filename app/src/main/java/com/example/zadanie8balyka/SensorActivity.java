@@ -1,11 +1,13 @@
 package com.example.zadanie8balyka;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -21,7 +23,8 @@ public class SensorActivity extends AppCompatActivity {
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensorList = sensorManager.getSensorList(Sensor.TYPE_ALL);
+
+        SensorListItem nowy = new SensorListItem(Integer.toString(sensorList.size()));
+        getSupportFragmentManager().beginTransaction().add(R.id.place, nowy, null).commit();
     }
-
-
 }
