@@ -12,7 +12,6 @@ import android.widget.TextView;
 import java.util.List;
 
 public class SensorActivity extends AppCompatActivity {
-
     private SensorManager sensorManager;
     private List<Sensor> sensorList;
 

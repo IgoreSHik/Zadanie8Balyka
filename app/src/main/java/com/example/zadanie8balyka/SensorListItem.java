@@ -26,4 +26,5 @@ public class SensorListItem extends Fragment {
         super(R.layout.sensor_list_item);
         this.text = text;
     }
+
 }
