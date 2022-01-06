@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Zadanie8Balyka">
         <activity
+            android:name=".SensorDetailsActivity"
+            android:exported="true"
+            android:parentActivityName=".SensorActivity"
+            android:label="Details"/>
+        <activity
             android:name=".SensorActivity"
             android:exported="true">
             <intent-filter>
